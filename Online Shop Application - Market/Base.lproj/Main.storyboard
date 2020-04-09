@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fIg-5C-FL1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="I3P-DG-YaY">
+            <objects>
+                <viewController id="KuD-5O-M0d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="khV-t0-bX9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qlP-MV-dSS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="d6A-5c-G5S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bw2-Yk-vfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="455"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="IgW-rT-ZNU">
+            <objects>
+                <viewController id="38G-OC-e8J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wwD-bZ-uTz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WBE-6i-qLs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Category" id="29P-8n-zqc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYT-Qi-aME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="-195"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Jd-uv-Q8k">
+            <objects>
+                <tabBarController id="fIg-5C-FL1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aDa-1d-UBi"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vcd-M9-Wq1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="38G-OC-e8J" kind="relationship" relationship="viewControllers" id="Yzn-IQ-3Fe"/>
+                        <segue destination="KuD-5O-M0d" kind="relationship" relationship="viewControllers" id="QGZ-rf-zTh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87s-Sd-cvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

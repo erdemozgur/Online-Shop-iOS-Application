@@ -1,0 +1,6 @@
+framework module Pods_Online_Shop_Application___Market {
+  umbrella header "Pods-Online Shop Application - Market-umbrella.h"
+
+  export *
+  module * { export * }
+}
