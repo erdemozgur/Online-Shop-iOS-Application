@@ -20,6 +20,7 @@
 		B4FE3ADF243F1C5400F73FEF /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3ADE243F1C5400F73FEF /* FirebaseCollectionReference.swift */; };
 		B4FE3AE4243F319100F73FEF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE3243F319100F73FEF /* Category.swift */; };
 		B4FE3AE7243F3A6A00F73FEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE6243F3A6A00F73FEF /* Constants.swift */; };
+		B4FE3AE9243F524300F73FEF /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B4FE3ADE243F1C5400F73FEF /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		B4FE3AE3243F319100F73FEF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B4FE3AE6243F3A6A00F73FEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		D61568087D0939B097D54317 /* Pods_Online_Shop_Application___Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Online_Shop_Application___Market.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B4FE3AD8243F1A4200F73FEF /* CategoryCollectionViewController.swift */,
+				B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				B4FE3ADB243F1AA500F73FEF /* CategoryCollectionViewCell.swift in Sources */,
 				B4FE3AC5243F053500F73FEF /* AppDelegate.swift in Sources */,
 				B4FE3AD9243F1A4200F73FEF /* CategoryCollectionViewController.swift in Sources */,
+				B4FE3AE9243F524300F73FEF /* ItemsTableViewController.swift in Sources */,
 				B4FE3AC7243F053500F73FEF /* SceneDelegate.swift in Sources */,
 				B4FE3AE4243F319100F73FEF /* Category.swift in Sources */,
 				B4FE3AE7243F3A6A00F73FEF /* Constants.swift in Sources */,

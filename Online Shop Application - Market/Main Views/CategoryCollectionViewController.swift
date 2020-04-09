@@ -63,7 +63,24 @@ class CategoryCollectionViewController: UICollectionViewController {
         }
         
     }
-
+    //MARK: - UICollectionViewDelegate
+    //V19
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "CategoryToItemsSeg", sender: categoryArray[indexPath.row])
+        
+    }
+    //MARK - NAVIGATION
+    //V19
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "CategoryToItemsSeg" {
+            
+            let vc = segue.destination as! ItemsTableViewController
+            vc.category = sender as! Category
+        }
+        
+    }
 
 }
 
