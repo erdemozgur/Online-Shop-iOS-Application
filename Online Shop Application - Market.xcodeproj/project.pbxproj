@@ -21,6 +21,7 @@
 		B4FE3AE4243F319100F73FEF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE3243F319100F73FEF /* Category.swift */; };
 		B4FE3AE7243F3A6A00F73FEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE6243F3A6A00F73FEF /* Constants.swift */; };
 		B4FE3AE9243F524300F73FEF /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */; };
+		B4FE3AEB243F5F4900F73FEF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AEA243F5F4900F73FEF /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B4FE3AE3243F319100F73FEF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B4FE3AE6243F3A6A00F73FEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		B4FE3AEA243F5F4900F73FEF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D61568087D0939B097D54317 /* Pods_Online_Shop_Application___Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Online_Shop_Application___Market.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B4FE3AE3243F319100F73FEF /* Category.swift */,
+				B4FE3AEA243F5F4900F73FEF /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FE3AEB243F5F4900F73FEF /* Item.swift in Sources */,
 				B4FE3ADF243F1C5400F73FEF /* FirebaseCollectionReference.swift in Sources */,
 				B4FE3AC9243F053500F73FEF /* ViewController.swift in Sources */,
 				B4FE3ADB243F1AA500F73FEF /* CategoryCollectionViewCell.swift in Sources */,
