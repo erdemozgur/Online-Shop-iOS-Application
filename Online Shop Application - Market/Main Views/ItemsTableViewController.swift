@@ -30,6 +30,14 @@ class ItemsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "itemToAddItemSeg" {
+            
+            let vc = segue.destination as! AddItemViewController
+            vc.category = category!
+            
+        }
+    }
 
 
 }

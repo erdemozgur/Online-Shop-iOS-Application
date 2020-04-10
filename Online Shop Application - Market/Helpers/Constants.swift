@@ -28,6 +28,9 @@ public let kDESCRIPTION = "descriptionn"
 public let kPRICE = "price"
 public let kIMAGELINKS = "imageLinks"
 
+//V26
+public let kFILEREFERENCE = "gs://market-69b31.appspot.com"
+
 
 
 

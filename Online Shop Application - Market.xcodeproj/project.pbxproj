@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0459413B49EA25D7BBE4BBBB /* Pods_Online_Shop_Application___Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61568087D0939B097D54317 /* Pods_Online_Shop_Application___Market.framework */; };
+		B4CB182E2440826E003FB8B3 /* Richability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB182D2440826E003FB8B3 /* Richability.swift */; };
+		B4CB18302440858A003FB8B3 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB182F2440858A003FB8B3 /* Downloader.swift */; };
 		B4FE3AC5243F053500F73FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AC4243F053500F73FEF /* AppDelegate.swift */; };
 		B4FE3AC7243F053500F73FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AC6243F053500F73FEF /* SceneDelegate.swift */; };
 		B4FE3AC9243F053500F73FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AC8243F053500F73FEF /* ViewController.swift */; };
@@ -22,11 +24,14 @@
 		B4FE3AE7243F3A6A00F73FEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE6243F3A6A00F73FEF /* Constants.swift */; };
 		B4FE3AE9243F524300F73FEF /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */; };
 		B4FE3AEB243F5F4900F73FEF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AEA243F5F4900F73FEF /* Item.swift */; };
+		B4FE3AED243F6A4500F73FEF /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE3AEC243F6A4500F73FEF /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BDB8A9E5370E8E181F788B5 /* Pods-Online Shop Application - Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Shop Application - Market.debug.xcconfig"; path = "Target Support Files/Pods-Online Shop Application - Market/Pods-Online Shop Application - Market.debug.xcconfig"; sourceTree = "<group>"; };
 		6164A7E7707FA51394C34F7C /* Pods-Online Shop Application - Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Shop Application - Market.release.xcconfig"; path = "Target Support Files/Pods-Online Shop Application - Market/Pods-Online Shop Application - Market.release.xcconfig"; sourceTree = "<group>"; };
+		B4CB182D2440826E003FB8B3 /* Richability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Richability.swift; sourceTree = "<group>"; };
+		B4CB182F2440858A003FB8B3 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		B4FE3AC1243F053500F73FEF /* Online Shop Application - Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online Shop Application - Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FE3AC4243F053500F73FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4FE3AC6243F053500F73FEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		B4FE3AE6243F3A6A00F73FEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		B4FE3AEA243F5F4900F73FEF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B4FE3AEC243F6A4500F73FEF /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		D61568087D0939B097D54317 /* Pods_Online_Shop_Application___Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Online_Shop_Application___Market.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,8 @@
 			children = (
 				B4FE3ADE243F1C5400F73FEF /* FirebaseCollectionReference.swift */,
 				B4FE3AE6243F3A6A00F73FEF /* Constants.swift */,
+				B4CB182D2440826E003FB8B3 /* Richability.swift */,
+				B4CB182F2440858A003FB8B3 /* Downloader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 			children = (
 				B4FE3AD8243F1A4200F73FEF /* CategoryCollectionViewController.swift */,
 				B4FE3AE8243F524300F73FEF /* ItemsTableViewController.swift */,
+				B4FE3AEC243F6A4500F73FEF /* AddItemViewController.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -267,12 +276,15 @@
 				B4FE3ADF243F1C5400F73FEF /* FirebaseCollectionReference.swift in Sources */,
 				B4FE3AC9243F053500F73FEF /* ViewController.swift in Sources */,
 				B4FE3ADB243F1AA500F73FEF /* CategoryCollectionViewCell.swift in Sources */,
+				B4CB182E2440826E003FB8B3 /* Richability.swift in Sources */,
 				B4FE3AC5243F053500F73FEF /* AppDelegate.swift in Sources */,
 				B4FE3AD9243F1A4200F73FEF /* CategoryCollectionViewController.swift in Sources */,
 				B4FE3AE9243F524300F73FEF /* ItemsTableViewController.swift in Sources */,
+				B4CB18302440858A003FB8B3 /* Downloader.swift in Sources */,
 				B4FE3AC7243F053500F73FEF /* SceneDelegate.swift in Sources */,
 				B4FE3AE4243F319100F73FEF /* Category.swift in Sources */,
 				B4FE3AE7243F3A6A00F73FEF /* Constants.swift in Sources */,
+				B4FE3AED243F6A4500F73FEF /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

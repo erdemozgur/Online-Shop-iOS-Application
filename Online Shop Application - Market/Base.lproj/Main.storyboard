@@ -166,12 +166,102 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ghN-jj-mdN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p7a-we-M03"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p7a-we-M03">
+                            <connections>
+                                <segue destination="o1i-QE-C9n" kind="show" identifier="itemToAddItemSeg" id="vhp-ck-RRO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jq-EV-sK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3618.840579710145" y="-226.33928571428569"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="2aJ-cL-3MM">
+            <objects>
+                <viewController id="o1i-QE-C9n" customClass="AddItemViewController" customModule="Online_Shop_Application___Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F93-CC-HxY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zUZ-6n-NGe">
+                                <rect key="frame" x="20" y="109" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="8aR-m9-Ytj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBK-BH-iIa">
+                                <rect key="frame" x="20" y="151" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UjY-il-4JC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdE-bq-5dV">
+                                <rect key="frame" x="20" y="213" width="374" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Ym5-hh-mv3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7R-zp-Xx1">
+                                <rect key="frame" x="20" y="333" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eXe-A6-waz"/>
+                                    <constraint firstAttribute="width" constant="70" id="qII-3l-45J"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="o1i-QE-C9n" eventType="touchUpInside" id="agX-BB-imS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="QuG-yi-Cwb" firstAttribute="trailing" secondItem="KBK-BH-iIa" secondAttribute="trailing" constant="20" id="7EN-bD-EEX"/>
+                            <constraint firstItem="KBK-BH-iIa" firstAttribute="leading" secondItem="QuG-yi-Cwb" secondAttribute="leading" constant="20" id="FEO-cc-R7u"/>
+                            <constraint firstItem="QuG-yi-Cwb" firstAttribute="trailing" secondItem="sdE-bq-5dV" secondAttribute="trailing" constant="20" id="PA1-qy-S2d"/>
+                            <constraint firstItem="QuG-yi-Cwb" firstAttribute="trailing" secondItem="zUZ-6n-NGe" secondAttribute="trailing" constant="20" id="PDd-Rp-Ewv"/>
+                            <constraint firstItem="zUZ-6n-NGe" firstAttribute="leading" secondItem="QuG-yi-Cwb" secondAttribute="leading" constant="20" id="YUE-bk-Ywt"/>
+                            <constraint firstItem="sdE-bq-5dV" firstAttribute="leading" secondItem="QuG-yi-Cwb" secondAttribute="leading" constant="20" id="d84-4G-u0u"/>
+                            <constraint firstItem="W7R-zp-Xx1" firstAttribute="leading" secondItem="QuG-yi-Cwb" secondAttribute="leading" constant="20" id="i1Z-ha-Hc5"/>
+                            <constraint firstItem="sdE-bq-5dV" firstAttribute="top" secondItem="KBK-BH-iIa" secondAttribute="bottom" constant="28" id="tEQ-5t-ixC"/>
+                            <constraint firstItem="zUZ-6n-NGe" firstAttribute="top" secondItem="QuG-yi-Cwb" secondAttribute="top" constant="21" id="xvG-Vy-HEY"/>
+                            <constraint firstItem="KBK-BH-iIa" firstAttribute="top" secondItem="zUZ-6n-NGe" secondAttribute="bottom" constant="8" id="yNH-VY-zCI"/>
+                            <constraint firstItem="W7R-zp-Xx1" firstAttribute="top" secondItem="sdE-bq-5dV" secondAttribute="bottom" constant="35" id="zv3-31-tY2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QuG-yi-Cwb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EdA-dn-UmJ" appends="YES" id="A2Z-zd-klb"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Item" id="dhR-2j-tMk">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="oPa-Oq-6sx">
+                            <connections>
+                                <action selector="doneBarButtonItemPressed:" destination="o1i-QE-C9n" id="9tF-Y7-Elq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="sdE-bq-5dV" id="FYf-z0-Zde"/>
+                        <outlet property="priceTextField" destination="KBK-BH-iIa" id="DIM-d8-d9I"/>
+                        <outlet property="titleTextField" destination="zUZ-6n-NGe" id="zPe-G1-6Gp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VU2-YE-UcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EdA-dn-UmJ">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="o1i-QE-C9n" id="zZO-Br-leO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4395.652173913044" y="-226.33928571428569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0Jd-uv-Q8k">
